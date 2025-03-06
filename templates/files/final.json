@@ -1,0 +1,276 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "Whats up",
+                "Whats cooking"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?",
+                "Hello! I'm Dexter. How may I help you?",
+                "Hey there!"
+            ],
+            "context_set": "customer replied for greeting"
+        },
+        {
+            "tag": "special_offers",
+            "patterns": [
+                "Do you have any special offers?",
+                "What are your discounts?",
+                "Any deals available?",
+                "Current promotions?",
+                "Any ongoing offers?"
+            ],
+            "responses": [
+                "We currently have a 20% discount on all desserts every Monday!",
+                "Check out our happy hour from 4 PM to 6 PM for exciting deals!",
+                "Yes, we have a weekend brunch offer. Would you like more details?"
+            ],
+            "context_set": "offers"
+        },
+        {
+            "tag": "reservation_policy",
+            "patterns": [
+                "Do I need to reserve a table in advance?",
+                "Is prior reservation required?",
+                "What's your reservation policy?",
+                "Can I just walk in?"
+            ],
+            "responses": [
+                "You can walk in, but we recommend reserving a table during peak hours.",
+                "We accept walk-ins, but reservations are preferred for large groups or special occasions.",
+                "You don't need a reservation, but it helps secure your spot!"
+            ],
+            "context_set": "reservation"
+        },
+        {
+            "tag": "payment_methods",
+            "patterns": [
+                "What payment methods do you accept?",
+                "Can I pay by card?",
+                "Do you accept UPI?",
+                "What are the available payment options?",
+                "Do you take cash payments?"
+            ],
+            "responses": [
+                "We accept all major credit and debit cards, UPI, and cash.",
+                "You can pay via card, UPI, or cash. Let us know your preferred option!",
+                "Our payment options include cash, UPI, and all major cards."
+            ],
+            "context_set": "payments"
+        },
+        {
+            "tag": "cuisine",
+            "patterns": [
+                "What cuisine do you serve?",
+                "What type of food do you offer?",
+                "Do you serve Indian food?",
+                "What kind of dishes are available?",
+                "What cuisine is your specialty?"
+            ],
+            "responses": [
+                "We specialize in Italian, Indian, and Continental cuisines. Would you like to explore our menu?",
+                "Our menu features a variety of cuisines, including Indian, Chinese, and Continental.",
+                "We serve a mix of cuisines, but our specialty is Italian pasta and wood-fired pizzas."
+            ],
+            "context_set": "cuisine"
+        },
+        {
+            "tag": "children_menu",
+            "patterns": [
+                "Do you have a kids' menu?",
+                "What do you have for children?",
+                "Do you serve kids' meals?",
+                "Are there options for kids?"
+            ],
+            "responses": [
+                "Yes, we have a kids' menu with items like mini pizzas, mac and cheese, and fries.",
+                "We offer kid-friendly meals, including small portion sizes and fun desserts.",
+                "Our kids' menu features delicious options that children love. Would you like me to share it?"
+            ],
+            "context_set": "kids"
+        },
+        {
+            "tag": "delivery",
+            "patterns": [
+                "Do you deliver food?",
+                "Can I order delivery?",
+                "Do you offer home delivery?",
+                "Is delivery available?"
+            ],
+            "responses": [
+                "Yes, we deliver food! You can order via our website or through popular delivery apps.",
+                "We offer home delivery! Let me know what you'd like to order.",
+                "Delivery is available. Would you like me to guide you through the process?"
+            ],
+            "context_set": "delivery"
+        },
+        {
+            "tag": "best_dish",
+            "patterns": [
+                "What is your best dish?",
+                "What's the most popular item?",
+                "What do you recommend?",
+                "Which dish is a must-try?"
+            ],
+            "responses": [
+                "Our most popular dish is our signature wood-fired pizza!",
+                "You should try our chef’s special pasta—it’s a customer favorite!",
+                "I highly recommend our seafood platter. It’s delicious!"
+            ],
+            "context_set": "best_dish"
+        },
+        {
+            "tag": "book_table",
+            "patterns": [
+                "Book a table",
+                "Can I book a table?",
+                "I want to book a table",
+                "Book seat",
+                "I want to book a seat",
+                "Can I book a seat?"
+            ],
+            "responses": [
+                "Sure! How many people should I reserve the table for?",
+                "Absolutely! Please let me know the date, time, and number of guests",
+                "Let me know your booking details, and I'll confirm your table!"
+            ],
+            "context_set": "booking"
+        },
+        {
+            "tag": "available_tables",
+            "patterns": [
+                "How many seats are available?",
+                "Available seats",
+                "How many tables are available?",
+                "Available tables"
+            ],
+            "responses": [
+                "Seats are available! Please let me know how many guests are coming",
+                "Let me check the availability for you. Could you let me know for how many people and when?",
+                "We have a few tables available. Please provide more details like time and group size for exact availability."
+            ],
+            "context_set": "check_availability"
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "See you later",
+                "Goodbye",
+                "I am Leaving",
+                "Have a Good day",
+                "cya later",
+                "I gotta go now",
+                "I gotta rush now"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!"
+            ],
+            "context_set": "end_conversation"
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old",
+                "how old is Dexter",
+                "what is your age",
+                "how old are you",
+                "age?"
+            ],
+            "responses": [
+                "My master built me just a month ago.",
+                "Just a month old!"
+            ],
+            "context_set": "bot_info"
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "what is your name",
+                "what should I call you",
+                "whats your name?"
+            ],
+            "responses": [
+                "You can call me Dexter.",
+                "I'm Dexter!",
+                "I'm Dexter aka The Restaurant Superbot."
+            ],
+            "context_set": "bot_info"
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "when are you guys open",
+                "what are your hours",
+                "hours of operation",
+                "hours",
+                "what is the timing"
+            ],
+            "responses": [
+                "We are open 10am-12am Monday-Friday!",
+                "rating hours are 10am to 12am on weekdays. Let me know if you need more details!"
+            ],
+            "context_set": "business_hours"
+        },
+        {
+            "tag": "menu",
+            "patterns": [
+                "Id like to order something",
+                "whats on the menu",
+                "what do you reccommend?",
+                "could i get something to eat",
+                "Im hungry"
+            ],
+            "responses": [
+                "We have a variety of delicious options! Would you like to see the full menu?",
+                "Our special dishes include pasta, gourmet burgers, and a variety of desserts. Let me know if you'd like specific recommendations!",
+                "Sure! Here’s our menu: [Link to menu]. Let me know if you need suggestions!"
+            ],
+            "context_set": "menu_inquiry"
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact information",
+                "contact us",
+                "how can i contact you",
+                "can i get the contact details",
+                "I wanna give some feedback",
+                "how can i give some feedback?"
+            ],
+            "responses": [
+                "You can contact us at contact@restaurantname.com",
+                "Feel free to reach out to us at contact@restaurantname.com or call us at +91 98765 43210."
+            ],
+            "context_set": "contact_details"
+        },
+        {
+            "tag": "address",
+            "patterns": [
+                "what is the location?",
+                "whats the location",
+                "where are you locatated?",
+                "where is the restaurant located?",
+                "address",
+                "whats the address?"
+            ],
+            "responses": [
+                "You can locate us at Taj Lands End, Bandra Bandstand, Bandra West, Mumbai, Maharashtra 400 050",
+                "We are located at Taj Lands End in Bandra West, Mumbai. Hope to see you soon!"
+            ],
+            "context_set": "location_info"
+        }
+    ]
+}
